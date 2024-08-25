@@ -1,0 +1,31 @@
+.tab-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-name-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.tab-wrapper .tab {
+    cursor: pointer;
+}
+
+.tab-wrapper:not(.active) .tab {
+    filter: brightness(85%);
+}
+
+.tab-wrapper:not(.active) .tab:hover {
+    filter: brightness(100%);
+}
+
+.tab-wrapper .content {
+    display: none
+}
+
+.tab-wrapper.active .content {
+    display: block;
+}
